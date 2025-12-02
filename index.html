@@ -3,48 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Nadia</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #003366;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            padding: 0 20px;
+            line-height: 1.7;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.25s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-4px);
+            background: #e9f1ff;
+        }
+
+        .contact-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-box a {
+            background: #003366;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .contact-box a:hover {
+            background: #0055aa;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Hello, I am Nadia</h1>
-            <p>Educator, Engineer, and Lifelong Learner</p>
-        </div>
+    <header>
+        <h1>Nadia Gouda</h1>
+        <p>Educator. Engineer. Programmer. Lifelong Learner.</p>
     </header>
 
-    <section class="about">
+    <section>
         <h2>About Me</h2>
         <p>
-            I am a faculty member at NSCC eCampus teaching IT Programming and Networking.
-            I enjoy helping students grow, designing creative tech projects, and exploring new
-            innovations in education and technology. I love building learning experiences that
-            are simple and powerful for beginners.
+            My name is Nadia Gouda. I am an educator and engineer with experience in Electrical and Computer Engineering, programming, networking, and web development.  
+            I am a faculty member at NSCC eCampus where I teach IT Programming and Networking courses.  
+            I have always believed that learning becomes powerful when it is simple and accessible to everyone.  
+        </p>
+        <p>
+            I enjoy helping students grow, guiding beginners to understand complex ideas in easy steps, and creating learning materials that make every student feel confident.  
+            I am passionate about technology, education, creativity, and building new ideas that help people learn and explore their potential.
         </p>
     </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skill-grid">
-            <div class="skill-card">Java</div>
-            <div class="skill-card">Spring Boot</div>
-            <div class="skill-card">HTML and CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Networking and CCNA</div>
-            <div class="skill-card">SQL Databases</div>
+    <section>
+        <h2>What I Teach</h2>
+        <p>I teach a range of programming, networking, and web development subjects, including:</p>
+        
+        <div class="skills-list">
+            <div class="skill-item">Java</div>
+            <div class="skill-item">Spring Boot</div>
+            <div class="skill-item">HTML and CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">SQL Databases</div>
+            <div class="skill-item">Networking and CCNA</div>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>If you would like to reach out, feel free to contact me.</p>
-        <a class="contact-btn" href="mailto:example@email.com">Send an Email</a>
+    <section>
+        <h2>My Philosophy</h2>
+        <p>
+            I believe that education should inspire, support, and empower.  
+            I love turning difficult topics into simple lessons that stay with students for life.  
+            My goal is to create a learning experience that is warm, supportive, and full of discovery.
+        </p>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p class="contact-box">
+            <a href="mailto:example@email.com">Send Email</a>
+        </p>
     </section>
 
     <footer>
-        <p>Made with love and passion for teaching and technology</p>
+        <p>Created with passion for learning, growth, and technology</p>
     </footer>
 
 </body>
