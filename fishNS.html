@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ملخص مناطق الصيد في نوفا سكوشيا 2026</title>
+  <style>
+    @font-face {
+      font-family: 'NotoArabic';
+      src: url('file:///usr/share/fonts/truetype/noto/NotoSansArabicUI-Regular.ttf') format('truetype');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'NotoArabic';
+      src: url('file:///usr/share/fonts/truetype/noto/NotoSansArabic-CondensedBold.ttf') format('truetype');
+      font-weight: 700;
+    }
+    :root {
+      --navy: #0d3b66;
+      --blue: #1f6fb2;
+      --light: #eef5fb;
+      --ink: #17324d;
+      --muted: #5a7087;
+      --border: #d5e2ef;
+      --card: #ffffff;
+      --chip: #e8f1fa;
+      --gold: #f7c948;
+      --success: #dff3e6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'NotoArabic', Arial, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #f7fbff 0%, #eef5fb 100%);
+      line-height: 1.8;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--navy), #155287 60%, var(--blue));
+      color: #fff;
+      border-radius: 24px;
+      padding: 28px 30px;
+      box-shadow: 0 18px 50px rgba(13,59,102,.18);
+      margin-bottom: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "🎣";
+      position: absolute;
+      left: 24px;
+      top: 18px;
+      font-size: 56px;
+      opacity: .15;
+    }
+    h1, h2, h3 { margin: 0 0 10px; line-height: 1.4; }
+    h1 { font-size: 30px; font-weight: 700; }
+    h2 { font-size: 22px; color: var(--navy); }
+    h3 { font-size: 18px; color: var(--navy); }
+    p { margin: 0 0 10px; }
+    .sub { font-size: 15px; color: rgba(255,255,255,.92); max-width: 900px; }
+    .meta, .note-box, .mini-card, .card, .table-wrap, .filters {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(13,59,102,.06);
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .mini-card {
+      padding: 14px 16px;
+      background: linear-gradient(180deg, #fff, #f8fbff);
+    }
+    .mini-card strong { display: block; color: var(--navy); font-size: 15px; }
+    .mini-card span { color: var(--muted); font-size: 14px; }
+    .filters {
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+    input[type="search"] {
+      flex: 1 1 320px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 14px;
+      background: #fff;
+    }
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-family: inherit;
+      font-size: 14px;
+      cursor: pointer;
+      background: var(--chip);
+      color: var(--navy);
+      transition: .2s ease;
+    }
+    button:hover, button.active { background: var(--navy); color: #fff; }
+    .table-wrap { overflow-x: auto; padding: 10px; margin-bottom: 20px; }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      min-width: 880px;
+      font-size: 14px;
+    }
+    thead th {
+      background: var(--navy);
+      color: #fff;
+      padding: 14px 12px;
+      text-align: right;
+      font-weight: 700;
+      border-bottom: 0;
+    }
+    thead th:first-child { border-top-right-radius: 14px; }
+    thead th:last-child { border-top-left-radius: 14px; }
+    tbody td {
+      padding: 13px 12px;
+      background: #fff;
+      border-bottom: 1px solid #e6eef6;
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) td { background: #fbfdff; }
+    .tag {
+      display: inline-block;
+      background: var(--chip);
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      margin: 2px 0 0 6px;
+      white-space: nowrap;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .card {
+      padding: 18px;
+      break-inside: avoid;
+    }
+    .card h3 { display: flex; align-items: center; gap: 8px; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 8px;
+      flex: 0 0 auto;
+    }
+    .counties { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+    ul { margin: 8px 0 0; padding: 0 18px 0 0; }
+    li { margin-bottom: 6px; }
+    .note-box {
+      padding: 18px;
+      margin-top: 18px;
+      background: linear-gradient(180deg, #fffdf5, #fff7df);
+      border-color: #f0dfab;
+    }
+    .footer {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 18px;
+      text-align: center;
+    }
+    .source { font-size: 13px; color: var(--muted); }
+    .hidden { display: none !important; }
+
+    @media (max-width: 820px) {
+      .meta, .cards { grid-template-columns: 1fr; }
+      .page { padding: 16px; }
+      h1 { font-size: 24px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { max-width: none; padding: 14mm; }
+      .hero, .meta, .filters, .table-wrap, .card, .note-box {
+        box-shadow: none;
+      }
+      .filters button { display: none; }
+      .filters input { border: 1px solid #bbb; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .hero { page-break-inside: avoid; }
+      .table-wrap, .note-box, .cards { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>ملخص جاهز للطلبة: مناطق الصيد في نوفا سكوشيا 2026</h1>
+      <p class="sub">ملف تعليمي مبسط بالعربي المصري يوضح مناطق الصيد الترفيهي RFA في نوفا سكوشيا، مع الفترة الأساسية الشائعة لكل منطقة، وأهم الاستثناءات اللي لازم الطلبة ياخدوا بالهم منها قبل أي رحلة صيد.</p>
+    </section>
+
+    <section class="meta">
+      <div class="mini-card"><strong>القاعدة العامة للتراوت</strong><span>غالبا من 1 أبريل إلى 30 سبتمبر، مع استثناءات حسب المنطقة والمياه المدية.</span></div>
+      <div class="mini-card"><strong>قاعدة سبتمبر</strong><span>من 1 سبتمبر إلى 30 سبتمبر لا يجوز الاحتفاظ بـ Brook Trout، ويُمنع الطعم الطبيعي للتراوت إلا لو الدليل ذكر استثناء.</span></div>
+      <div class="mini-card"><strong>قاعدة مهمة</strong><span>الجدول ده للتعليم السريع. الحكم النهائي دائما لاسم الماء نفسه والقانون المكتوب له في الدليل.</span></div>
+    </section>
+
+    <section class="filters">
+      <h2>نسخة تفاعلية للشرح أو Brightspace</h2>
+      <p>اكتبي اسم المقاطعة أو RFA في البحث، أو استخدمي الأزرار لإظهار المناطق التي فيها مواسم ممتدة.</p>
+      <div class="filter-row">
+        <input type="search" id="searchBox" placeholder="ابحثي: Halifax أو RFA 3 أو Kings مثلا" />
+        <button data-filter="all" class="active">كل المناطق</button>
+        <button data-filter="extended-trout">مواسم تراوت ممتدة</button>
+        <button data-filter="extended-bass">مواسم Bass ممتدة</button>
+        <button id="resetBtn">إعادة ضبط</button>
+      </div>
+    </section>
+
+    <section class="table-wrap">
+      <h2 style="padding:8px 10px 12px;">الجدول السريع</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>المنطقة</th>
+            <th>المقاطعات</th>
+            <th>الفترة الأساسية الشائعة</th>
+            <th>مياه مدية</th>
+            <th>أمثلة على المواسم الممتدة</th>
+            <th>ملاحظات سريعة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>RFA 1</strong></td>
+            <td>Cape Breton, Inverness, Richmond, Victoria</td>
+            <td>التراوت في أغلب المياه الداخلية: 1 أبريل - 30 سبتمبر</td>
+            <td>بعض المياه: 15 أبريل - 30 سبتمبر</td>
+            <td>مياه محددة مفتوحة طوال السنة للتراوت. وبعض مياه Bras d'Or مفتوحة طوال السنة للتراوت rainbow و brown</td>
+            <td>في مياه معينة بالموسم المبكر يكون الصيد مقفول من 1 إلى 14 أبريل</td>
+          </tr>
+          <tr>
+            <td><strong>RFA 2</strong></td>
+            <td>Antigonish, Guysborough, Pictou</td>
+            <td>المياه الداخلية: 1 أبريل - 30 سبتمبر</td>
+            <td>المياه المدية: 15 أبريل - 30 سبتمبر</td>
+            <td>في بعض البحيرات مواسم ممتدة للتراوت حتى الشتاء أو طول السنة حسب الماء</td>
+            <td>Goose Harbour Lake في Guysborough مذكورة مفتوحة طوال السنة لـ landlocked salmon</td>
+          </tr>
+          <tr>
+            <td><strong>RFA 3</strong></td>
+            <td>Halifax, Lunenburg</td>
+            <td>المياه الداخلية: 1 أبريل - 30 سبتمبر</td>
+            <td>Halifax Harbour وشرقها: 15 أبريل - 30 سبتمبر. غرب Halifax Harbour وLunenburg tidal: 1 أبريل - 30 سبتمبر</td>
+            <td>تراوت: بحيرات محددة مفتوحة طوال السنة. Bass: بعض المياه 1 أبريل - 31 ديسمبر</td>
+            <td>شرق خط Highway 102/104/118/107/328 يجب الاحتفاظ بكل Smallmouth Bass</td>
+          </tr>
+          <tr>
+            <td><strong>RFA 4</strong></td>
+            <td>Digby, Queens, Shelburne, Yarmouth</td>
+            <td>المياه الداخلية والمدية: 1 أبريل - 30 سبتمبر</td>
+            <td>غالبا ضمن نفس الفترة في هذه المنطقة</td>
+            <td>تراوت: بحيرات محددة مفتوحة طوال السنة. Bass: بعض المياه 1 أبريل - 31 ديسمبر</td>
+            <td>في بعض المياه Night Fishing للبني Brown Trout حتى 31 أكتوبر</td>
+          </tr>
+          <tr>
+            <td><strong>RFA 5</strong></td>
+            <td>Annapolis, Hants, Kings</td>
+            <td>القاعدة العامة للتراوت: 1 أبريل - 30 سبتمبر، مع استثناءات محلية لبعض الأنهار</td>
+            <td>راجعي الماء نفسه لو كان مدي</td>
+            <td>Bass: القاعدة 1 أبريل - 31 أكتوبر. Gaspereau Lake حتى 31 ديسمبر. بعض بحيرات التراوت أو perch مفتوحة طوال السنة</td>
+            <td>Cornwallis River فيه تفاصيل خاصة حسب الجزء والشهر</td>
+          </tr>
+          <tr>
+            <td><strong>RFA 6</strong></td>
+            <td>Colchester, Cumberland</td>
+            <td>المياه الداخلية: 1 أبريل - 30 سبتمبر</td>
+            <td>المياه المدية: 15 أبريل - 30 سبتمبر</td>
+            <td>Deyarmont Lake مفتوحة طوال السنة للتراوت. Harrison وIsaac Lakes مواسم ممتدة للتراوت. Shortts Lake bass حتى 31 ديسمبر</td>
+            <td>في بعض الأنهار الافتتاح يتأخر إلى 15 مايو</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="cards" id="cardsContainer">
+      <article class="card area-card" data-tags="rfa1 capebreton inverness richmond victoria extended-trout">
+        <h3><span class="badge">1</span> RFA 1</h3>
+        <p class="counties">Cape Breton, Inverness, Richmond, Victoria</p>
+        <span class="tag">تراوت أساسي 1 أبريل - 30 سبتمبر</span>
+        <span class="tag">بعض المياه المدية 15 أبريل - 30 سبتمبر</span>
+        <span class="tag">مواسم ممتدة للتراوت</span>
+        <ul>
+          <li>في بعض المياه المقفولة مبكرا، الصيد يفتح 15 أبريل بعد إغلاق من 1 إلى 14 أبريل.</li>
+          <li>Petite Lac و#20 Dam Pond وEco-Trail Pond وGrant's Pond فيها تراوت ممتد.</li>
+          <li>بعض مياه Bras d'Or Lakes مذكورة مفتوحة طوال السنة للتراوت rainbow و brown.</li>
+        </ul>
+      </article>
+
+      <article class="card area-card" data-tags="rfa2 antigonish guysborough pictou extended-trout">
+        <h3><span class="badge">2</span> RFA 2</h3>
+        <p class="counties">Antigonish, Guysborough, Pictou</p>
+        <span class="tag">داخلية 1 أبريل - 30 سبتمبر</span>
+        <span class="tag">مدية 15 أبريل - 30 سبتمبر</span>
+        <span class="tag">بعض المواسم الممتدة</span>
+        <ul>
+          <li>Goose Harbour Lake في Guysborough مذكورة مفتوحة طوال السنة لـ landlocked salmon.</li>
+          <li>القاعدة الأساسية قريبة من القاعدة العامة للمقاطعة، لكن لازم مراجعة اسم الماء نفسه.</li>
+          <li>دي منطقة مناسبة لشرح فكرة إن المقاطعة الواحدة فيها أكثر من نوع موسم داخل نفس RFA.</li>
+        </ul>
+      </article>
+
+      <article class="card area-card" data-tags="rfa3 halifax lunenburg extended-trout extended-bass">
+        <h3><span class="badge">3</span> RFA 3</h3>
+        <p class="counties">Halifax, Lunenburg</p>
+        <span class="tag">داخلية 1 أبريل - 30 سبتمبر</span>
+        <span class="tag">Halifax Harbour شرق 15 أبريل - 30 سبتمبر</span>
+        <span class="tag">Bass ممتد حتى 31 ديسمبر</span>
+        <ul>
+          <li>Banook Lake وMicmac Lake وبعض المياه الأخرى فيها Smallmouth Bass ممتد من 1 أبريل إلى 31 ديسمبر.</li>
+          <li>بعض بحيرات Halifax وLunenburg مفتوحة طوال السنة للتراوت مع حد احتفاظ أقل.</li>
+          <li>كل Smallmouth Bass شرق الخط المحدد في الدليل لازم يتم الاحتفاظ به.</li>
+        </ul>
+      </article>
+
+      <article class="card area-card" data-tags="rfa4 digby queens shelburne yarmouth extended-trout extended-bass">
+        <h3><span class="badge">4</span> RFA 4</h3>
+        <p class="counties">Digby, Queens, Shelburne, Yarmouth</p>
+        <span class="tag">داخلية ومدية 1 أبريل - 30 سبتمبر</span>
+        <span class="tag">تراوت ممتد في بحيرات محددة</span>
+        <span class="tag">Bass ممتد حتى 31 ديسمبر</span>
+        <ul>
+          <li>Allens Lake وبعض Christopher lakes مفتوحة طوال السنة ضمن برنامج Trophy Trout.</li>
+          <li>Everitts Lake وHidden Hills Lake وVictoria Lake فيها مواسم تراوت ممتدة.</li>
+          <li>Salmon River Lake وMersey River وبعض بحيرات Yarmouth فيها Smallmouth Bass حتى 31 ديسمبر.</li>
+        </ul>
+      </article>
+
+      <article class="card area-card" data-tags="rfa5 annapolis hants kings extended-trout extended-bass">
+        <h3><span class="badge">5</span> RFA 5</h3>
+        <p class="counties">Annapolis, Hants, Kings</p>
+        <span class="tag">قاعدة التراوت العامة 1 أبريل - 30 سبتمبر</span>
+        <span class="tag">Bass 1 أبريل - 31 أكتوبر</span>
+        <span class="tag">Gaspereau Lake حتى 31 ديسمبر</span>
+        <ul>
+          <li>Gaspereau Lake في Kings County فيها موسم Smallmouth Bass ممتد حتى 31 ديسمبر.</li>
+          <li>Cornwallis River فيه تقسيمات شهرية دقيقة، وبعض الأجزاء فيها صيد ليلي للبني Brown Trout حتى 31 أكتوبر.</li>
+          <li>في بحيرات ومياه محددة ضمن Upper Medway Special Trout Management Area لها قواعد خاصة.</li>
+        </ul>
+      </article>
+
+      <article class="card area-card" data-tags="rfa6 colchester cumberland extended-trout extended-bass">
+        <h3><span class="badge">6</span> RFA 6</h3>
+        <p class="counties">Colchester, Cumberland</p>
+        <span class="tag">داخلية 1 أبريل - 30 سبتمبر</span>
+        <span class="tag">مدية 15 أبريل - 30 سبتمبر</span>
+        <span class="tag">بعض المياه تفتح 15 مايو</span>
+        <ul>
+          <li>Deyarmont Lake مفتوحة طوال السنة للتراوت.</li>
+          <li>Harrison Lake وIsaac Lake فيها مواسم تراوت ممتدة، وShortts Lake فيها Bass ممتد حتى 31 ديسمبر.</li>
+          <li>في بعض أنهار Colchester وCumberland افتتاح الموسم بيتأخر حسب النهر، لذلك اسم الماء مهم جدا.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="note-box">
+      <h2>طريقة شرح سهلة للطلبة</h2>
+      <p><strong>المنطقة تحدد الإطار العام</strong>، لكن <strong>اسم الماء ونوع السمك والتاريخ</strong> هم اللي بيحددوا الحكم النهائي.</p>
+      <p>يعني ممكن نفس RFA يكون فيه بحيرة مفتوحة طول السنة، ونهر تاني فيها يفتح متأخر، وجزء ثالث فيه Catch and Release فقط.</p>
+    </section>
+
+    <p class="footer">المصدر المستخدم في إعداد الملف: Nova Scotia Anglers' Handbook and 2026 Summary of Regulations, صفحات جدول المحتويات والمواسم ومناطق RFA المختلفة.</p>
+  </div>
+
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const cards = Array.from(document.querySelectorAll('.area-card'));
+    const buttons = Array.from(document.querySelectorAll('button[data-filter]'));
+    const resetBtn = document.getElementById('resetBtn');
+    let activeFilter = 'all';
+
+    function applyFilters() {
+      const q = (searchBox.value || '').trim().toLowerCase();
+      cards.forEach(card => {
+        const tags = card.dataset.tags.toLowerCase();
+        const matchText = !q || tags.includes(q) || card.textContent.toLowerCase().includes(q);
+        const matchFilter = activeFilter === 'all' || tags.includes(activeFilter);
+        card.classList.toggle('hidden', !(matchText && matchFilter));
+      });
+    }
+
+    searchBox.addEventListener('input', applyFilters);
+    buttons.forEach(btn => btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      applyFilters();
+    }));
+    resetBtn.addEventListener('click', () => {
+      searchBox.value = '';
+      activeFilter = 'all';
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));
+      applyFilters();
+    });
+  </script>
+</body>
+</html>
