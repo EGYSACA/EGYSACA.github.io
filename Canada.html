@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ملخص Discover Canada</title>
+  <style>
+    :root{
+      --primary:#b22222;
+      --secondary:#0b4f6c;
+      --accent:#f4f7fb;
+      --gold:#c79a2b;
+      --text:#1f2937;
+      --card:#ffffff;
+      --border:#d9e2ec;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Tahoma","Arial",sans-serif;
+      background: linear-gradient(180deg,#f8fafc 0%,#eef5fb 100%);
+      color:var(--text);
+      line-height:1.9;
+    }
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:32px 20px 60px;
+    }
+    .hero{
+      background: linear-gradient(135deg,var(--primary),#d94a4a);
+      color:white;
+      border-radius:24px;
+      padding:32px 26px;
+      box-shadow:0 12px 30px rgba(0,0,0,.12);
+      margin-bottom:24px;
+    }
+    .hero h1{
+      margin:0 0 12px;
+      font-size:2rem;
+    }
+    .hero p{
+      margin:8px 0;
+      font-size:1.05rem;
+    }
+    .badge{
+      display:inline-block;
+      background:rgba(255,255,255,.18);
+      border:1px solid rgba(255,255,255,.35);
+      padding:8px 14px;
+      border-radius:999px;
+      margin:6px 0 0;
+      font-size:.95rem;
+    }
+    .toc{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding:22px;
+      box-shadow:0 8px 20px rgba(10,30,60,.06);
+      margin-bottom:24px;
+    }
+    .toc h2{
+      margin-top:0;
+      color:var(--secondary);
+    }
+    .toc-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:10px;
+    }
+    .toc a{
+      text-decoration:none;
+      color:var(--secondary);
+      background:#f8fbff;
+      border:1px solid #dce9f5;
+      border-radius:12px;
+      padding:10px 12px;
+      display:block;
+      font-weight:700;
+    }
+    .section{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:26px;
+      margin:18px 0;
+      box-shadow:0 8px 20px rgba(10,30,60,.05);
+    }
+    .section h2{
+      margin-top:0;
+      color:var(--secondary);
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:1.5rem;
+    }
+    .icon{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--accent);
+      border:1px solid #dbe8f4;
+      font-size:1.3rem;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .card{
+      background:#fbfdff;
+      border:1px solid #e2ebf3;
+      border-radius:16px;
+      padding:16px;
+    }
+    .card h3{
+      margin-top:0;
+      color:var(--primary);
+      font-size:1.05rem;
+    }
+    ul{
+      padding-right:20px;
+      margin:8px 0;
+    }
+    .mini{
+      background:#fffaf0;
+      border:1px solid #f1dfb4;
+      padding:14px 16px;
+      border-radius:14px;
+      margin-top:14px;
+    }
+    .visual{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:16px;
+    }
+    .visual-box{
+      flex:1 1 180px;
+      min-width:180px;
+      background:linear-gradient(180deg,#ffffff,#f4f8fc);
+      border:1px solid #dde6ef;
+      border-radius:18px;
+      padding:18px;
+      text-align:center;
+      font-weight:700;
+    }
+    .visual-box span{
+      display:block;
+      font-size:2rem;
+      margin-bottom:8px;
+    }
+    .footer{
+      margin-top:28px;
+      background:#0f172a;
+      color:#e5eef7;
+      border-radius:22px;
+      padding:24px;
+    }
+    .footer h2{
+      margin-top:0;
+      color:#fff;
+    }
+    .source-list{
+      margin:0;
+      padding-right:18px;
+    }
+    .note{
+      font-size:.96rem;
+      color:#374151;
+      background:#f8fafc;
+      border-right:5px solid var(--gold);
+      padding:12px 14px;
+      border-radius:12px;
+      margin-top:14px;
+    }
+    @media (max-width:700px){
+      .hero h1{font-size:1.6rem}
+      .section{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>ملخص Discover Canada </h1>
+      <p>.</p>
+      <p>المحتوى ده معمول كملخص مبسّط من الدليل الرسمي للجنسية الكندية.</p>
+      <div class="badge"></div>
+    </section>
+
+    <section class="toc">
+      <h2>فهرس سريع</h2>
+      <div class="toc-grid">
+        <a href="#rights">الحقوق والواجبات</a>
+        <a href="#people">من هم الكنديون</a>
+        <a href="#history">تاريخ كندا</a>
+        <a href="#modern">كندا الحديثة</a>
+        <a href="#government">الحكومة</a>
+        <a href="#elections">الانتخابات</a>
+        <a href="#justice">النظام القضائي</a>
+        <a href="#symbols">رموز كندا</a>
+        <a href="#economy">اقتصاد كندا</a>
+        <a href="#regions">مناطق كندا</a>
+      </div>
+    </section>
+
+    <section class="section" id="rights">
+      <h2><span class="icon">⚖️</span> الحقوق والواجبات</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>أهم الحقوق</h3>
+          <ul>
+            <li>حرية التعبير والرأي</li>
+            <li>حرية الدين</li>
+            <li>المساواة بين الناس</li>
+            <li>الحق في التصويت</li>
+            <li>العيش والعمل في أي مقاطعة</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>أهم الواجبات</h3>
+          <ul>
+            <li>احترام القانون</li>
+            <li>احترام حقوق الآخرين</li>
+            <li>المشاركة في المجتمع</li>
+            <li>تحمّل المسؤولية والعمل</li>
+            <li>التصويت عند الاستحقاق</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mini">الفكرة ببساطة: في كندا عندك حريات قوية، لكن في المقابل لازم تكون شخص مسؤول ويحترم المجتمع والقانون.</div>
+    </section>
+
+    <section class="section" id="people">
+      <h2><span class="icon">👥</span> من هم الكنديون</h2>
+      <p>كندا بلد متنوع جدًا. فيها السكان الأصليون، وفيها ناس جايين من خلفيات وثقافات كتير من كل أنحاء العالم.</p>
+      <div class="visual">
+        <div class="visual-box"><span>🧭</span> السكان الأصليون</div>
+        <div class="visual-box"><span>🌍</span> مهاجرون من العالم</div>
+        <div class="visual-box"><span>🤝</span> تنوع واحترام</div>
+      </div>
+      <div class="note">المهم في الجزء ده إنك تعرف إن الهوية الكندية قائمة على التنوع، والانتماء، واحترام الاختلاف.</div>
+    </section>
+
+    <section class="section" id="history">
+      <h2><span class="icon">📜</span> تاريخ كندا</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>قبل الاتحاد</h3>
+          <p>كان السكان الأصليون موجودين في الأرض قبل وصول الأوروبيين. بعد كده وصل الفرنسيون والبريطانيون، وبدأ تاريخ طويل من الاستعمار والصراعات والتوسع.</p>
+        </div>
+        <div class="card">
+          <h3>الاتحاد سنة 1867</h3>
+          <p>ده تاريخ مهم جدًا. فيه اتأسست كندا الحديثة كدومينيون داخل الإمبراطورية البريطانية، وبدأ تكوين الدولة بشكل أوضح.</p>
+        </div>
+        <div class="card">
+          <h3>الحروب والتطور</h3>
+          <p>كندا شاركت في حروب كبيرة، وده ساعد في تكوين هويتها السياسية والوطنية، وبعدها استمرت في النمو والتقدم.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modern">
+      <h2><span class="icon">🏙️</span> كندا الحديثة</h2>
+      <p>كندا اليوم دولة متقدمة، متعددة الثقافات، وبتعتمد على المؤسسات الديمقراطية واحترام الحقوق.</p>
+      <div class="grid">
+        <div class="card"><h3>التنوع</h3><p>ناس من ثقافات كثيرة عايشين مع بعض.</p></div>
+        <div class="card"><h3>الخدمات</h3><p>فيه مؤسسات ونظام عام منظم.</p></div>
+        <div class="card"><h3>المواطنة</h3><p>الانتماء والمشاركة جزء أساسي من الحياة العامة.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="government">
+      <h2><span class="icon">🏛️</span> الحكومة في كندا</h2>
+      <p>كندا نظامها <strong>ملكية دستورية وديمقراطية برلمانية</strong>.</p>
+      <div class="visual">
+        <div class="visual-box"><span>👑</span> الملك رمز الدولة</div>
+        <div class="visual-box"><span>👨‍⚖️</span> رئيس الوزراء يدير الحكومة</div>
+        <div class="visual-box"><span>📘</span> البرلمان يشرّع القوانين</div>
+      </div>
+      <div class="mini">يعني ببساطة: الملك موجود كرأس دولة رمزي، لكن إدارة البلد اليومية بتكون من خلال الحكومة المنتخبة والبرلمان.</div>
+    </section>
+
+    <section class="section" id="elections">
+      <h2><span class="icon">🗳️</span> الانتخابات</h2>
+      <ul>
+        <li>المواطنون المؤهلون يقدروا يصوتوا</li>
+        <li>التصويت سري</li>
+        <li>الناس بتختار ممثلين عنهم</li>
+        <li>الانتخابات جزء أساسي من الديمقراطية</li>
+      </ul>
+    </section>
+
+    <section class="section" id="justice">
+      <h2><span class="icon">👨‍⚖️</span> النظام القضائي</h2>
+      <p>القانون في كندا بيحمي الناس، وبيؤكد إن الكل متساوٍ أمام القانون. القضاء مستقل، وده مهم جدًا للعدالة.</p>
+      <div class="grid">
+        <div class="card"><h3>سيادة القانون</h3><p>القانون فوق الجميع.</p></div>
+        <div class="card"><h3>العدالة</h3><p>المحاكم بتتعامل مع القضايا وفق القانون.</p></div>
+        <div class="card"><h3>المساواة</h3><p>الناس تُعامل على أساس عادل أمام النظام القضائي.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="symbols">
+      <h2><span class="icon">🍁</span> رموز كندا</h2>
+      <div class="visual">
+        <div class="visual-box"><span>🇨🇦</span> العلم الكندي</div>
+        <div class="visual-box"><span>🍁</span> ورقة القيقب</div>
+        <div class="visual-box"><span>🦫</span> القندس</div>
+        <div class="visual-box"><span>🎵</span> النشيد الوطني</div>
+      </div>
+    </section>
+
+    <section class="section" id="economy">
+      <h2><span class="icon">💼</span> اقتصاد كندا</h2>
+      <p>اقتصاد كندا متنوع، وبيعتمد على الموارد الطبيعية، الزراعة، الصناعة، الخدمات، والتكنولوجيا.</p>
+      <div class="grid">
+        <div class="card"><h3>الموارد الطبيعية</h3><p>مثل النفط والغاز والأخشاب والمعادن.</p></div>
+        <div class="card"><h3>الزراعة</h3><p>جزء مهم في بعض المناطق.</p></div>
+        <div class="card"><h3>الخدمات والتكنولوجيا</h3><p>دورهم كبير في الاقتصاد الحديث.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="regions">
+      <h2><span class="icon">🗺️</span> مناطق كندا</h2>
+      <p>كندا فيها 10 مقاطعات و3 أقاليم، وكل منطقة لها طبيعة مختلفة واقتصاد مختلف وطابع ثقافي خاص.</p>
+      <div class="grid">
+        <div class="card"><h3>Atlantic Canada</h3><p>الشرق الساحلي والمحيط الأطلسي.</p></div>
+        <div class="card"><h3>Central Canada</h3><p>من أهم المناطق من ناحية السكان والاقتصاد.</p></div>
+        <div class="card"><h3>Prairies</h3><p>معروفة بالزراعة والمساحات الواسعة.</p></div>
+        <div class="card"><h3>West Coast & North</h3><p>تنوع طبيعي كبير ومناخات مختلفة.</p></div>
+      </div>
+      <div class="note">في الامتحان، مهم تكون عارف أسماء المقاطعات والأقاليم، وبعض السمات العامة لكل منطقة.</div>
+    </section>
+
+    <section class="footer">
+      <h2>المصادر</h2>
+      <ol class="source-list">
+        <li>الدليل الرسمي: Discover Canada: The Rights and Responsibilities of Citizenship</li>
+        <li>Government of Canada, IRCC</li>
+        <li>صفحة الدراسة الرسمية لاختبار الجنسية الكندية</li>
+      </ol>
+      <p style="margin-top:14px;">ملاحظة: النسخة دي ملخص مبسّط ومنسق، وليست بديلًا عن مراجعة الدليل الرسمي كاملًا قبل الاختبار.</p>
+    </section>
+  </div>
+</body>
+</html>
